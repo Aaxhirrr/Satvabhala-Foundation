@@ -9,7 +9,18 @@ export const QuickEscape = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => setIsVisible(true), 2000)
-        return () => clearTimeout(timer)
+        
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") {
+                handleEscape()
+            }
+        }
+        window.addEventListener("keydown", handleKeyDown)
+        
+        return () => {
+            clearTimeout(timer)
+            window.removeEventListener("keydown", handleKeyDown)
+        }
     }, [])
 
     const handleEscape = () => {
