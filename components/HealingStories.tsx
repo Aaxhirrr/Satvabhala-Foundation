@@ -70,14 +70,14 @@ export const HealingStories = () => {
     }
 
     return (
-        <section className="w-full py-24 px-8 relative overflow-hidden bg-transparent">
+        <section className="w-full py-16 md:py-24 px-4 md:px-8 relative overflow-hidden bg-transparent">
             <div className="max-w-4xl mx-auto flex flex-col items-center">
                 
-                <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-12 text-center" style={{ fontFamily: "Playfair Display, serif" }}>
+                <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-8 md:mb-12 text-center" style={{ fontFamily: "Playfair Display, serif" }}>
                     Stories of Healing
                 </h3>
 
-                <div className="relative w-full min-h-[300px] flex items-center justify-center">
+                <div className="relative w-full min-h-[480px] sm:min-h-[400px] md:min-h-[300px] flex items-center justify-center">
                     <AnimatePresence initial={false} custom={direction} mode="wait">
                         <motion.div
                             key={currentIndex}
@@ -90,24 +90,24 @@ export const HealingStories = () => {
                                 x: { type: "spring", stiffness: 300, damping: 30 },
                                 opacity: { duration: 0.4 }
                             }}
-                            className="absolute w-full px-4 md:px-16"
+                            className="absolute w-full px-10 md:px-16"
                         >
-                            <div className="bg-white/40 backdrop-blur-xl border border-white/50 shadow-[0_8px_32px_0_rgba(20,51,28,0.06)] rounded-3xl p-8 md:p-12 relative">
-                                <Quote className="absolute top-6 left-6 w-10 h-10 text-primary/20 rotate-180" />
-                                <blockquote className="relative z-10 text-center">
-                                    <p className="text-xl md:text-2xl leading-relaxed text-foreground/90 font-medium mb-8">
+                            <div className="bg-white/40 backdrop-blur-xl border border-white/50 shadow-[0_8px_32px_0_rgba(20,51,28,0.06)] rounded-3xl p-6 md:p-12 relative mx-auto w-full max-w-[95vw]">
+                                <Quote className="absolute top-4 left-4 md:top-6 md:left-6 w-8 h-8 md:w-10 md:h-10 text-primary/20 rotate-180" />
+                                <blockquote className="relative z-10 text-center px-1 md:px-4">
+                                    <p className="text-lg md:text-2xl leading-relaxed text-foreground/90 font-medium mb-6 md:mb-8">
                                         "{quotes[currentIndex].text}"
                                     </p>
                                     <footer className="flex flex-col items-center gap-1">
-                                        <cite className="not-italic font-semibold text-primary">
+                                        <cite className="not-italic font-semibold text-primary text-sm md:text-base">
                                             — {quotes[currentIndex].author}
                                         </cite>
-                                        <span className="text-sm text-foreground/60">
+                                        <span className="text-xs md:text-sm text-foreground/60 text-center">
                                             {quotes[currentIndex].source}
                                         </span>
                                     </footer>
                                 </blockquote>
-                                <Quote className="absolute bottom-6 right-6 w-10 h-10 text-primary/20" />
+                                <Quote className="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-8 h-8 md:w-10 md:h-10 text-primary/20" />
                             </div>
                         </motion.div>
                     </AnimatePresence>
