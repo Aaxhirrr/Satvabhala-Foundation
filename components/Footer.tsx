@@ -27,43 +27,29 @@ type FooterProps = {
 
 const defaultSections: FooterSection[] = [
   {
-    title: "Product",
+    title: "Organization",
     links: [
-      { label: "Features", href: "#features" },
-      { label: "Integrations", href: "#integrations" },
-      { label: "Pricing", href: "#pricing" },
-      { label: "API Docs", href: "#api" },
-      { label: "Changelog", href: "#changelog" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { label: "About", href: "#about" },
-      { label: "Careers", href: "#careers" },
-      { label: "Blog", href: "#blog" },
-      { label: "Press Kit", href: "#press" },
-      { label: "Contact", href: "#contact" },
+      { label: "Our Mission", href: "/about" },
+      { label: "How We Help", href: "/about" },
+      { label: "Awareness", href: "/awareness" },
+      { label: "Community", href: "/about" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { label: "Documentation", href: "#docs" },
-      { label: "Help Center", href: "#help" },
-      { label: "Community", href: "#community" },
-      { label: "Case Studies", href: "#case-studies" },
-      { label: "Webinars", href: "#webinars" },
+      { label: "BPD Statistics", href: "/statistics" },
+      { label: "DBT Skills", href: "/sources" },
+      { label: "Crisis Help", href: "/contact" },
+      { label: "Research Sources", href: "/sources" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { label: "Privacy Policy", href: "#privacy" },
-      { label: "Terms of Service", href: "#terms" },
-      { label: "Security", href: "#security" },
-      { label: "Compliance", href: "#compliance" },
-      { label: "Cookie Policy", href: "#cookies" },
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Code of Conduct", href: "/conduct" },
     ],
   },
 ]
@@ -97,12 +83,11 @@ export const Footer = ({
           >
             <div className="mb-4">
               <h3
-                className="text-2xl font-semibold text-foreground mb-2"
-                style={{ fontFamily: "Figtree", fontWeight: "500" }}
+                className="text-2xl font-bold text-foreground mb-2 font-headings"
               >
                 {companyName}
               </h3>
-              <p className="text-sm leading-5 text-muted-foreground max-w-xs" style={{ fontFamily: "Figtree" }}>
+              <p className="text-sm leading-5 text-muted-foreground max-w-xs font-sans">
                 {tagline}
               </p>
             </div>
@@ -159,8 +144,7 @@ export const Footer = ({
               className="col-span-1"
             >
               <h4
-                className="text-sm font-medium text-foreground mb-4 uppercase tracking-wide"
-                style={{ fontFamily: "Figtree", fontWeight: "500" }}
+                className="text-sm font-bold text-foreground mb-4 uppercase tracking-wide font-sans"
               >
                 {section.title}
               </h4>
@@ -169,8 +153,7 @@ export const Footer = ({
                   <li key={linkIndex}>
                     <a
                       href={link.href}
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
-                      style={{ fontFamily: "Figtree" }}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150 font-sans"
                     >
                       {link.label}
                     </a>
@@ -190,21 +173,19 @@ export const Footer = ({
           className="pt-8 border-t border-border"
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground" style={{ fontFamily: "Figtree" }}>
+            <p className="text-sm text-muted-foreground font-sans">
               {copyright}
             </p>
             <div className="flex items-center gap-6">
               <a
                 href="#status"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
-                style={{ fontFamily: "Figtree" }}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150 font-sans"
               >
                 Status
               </a>
               <a
                 href="#sitemap"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
-                style={{ fontFamily: "Figtree" }}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150 font-sans"
               >
                 Sitemap
               </a>
