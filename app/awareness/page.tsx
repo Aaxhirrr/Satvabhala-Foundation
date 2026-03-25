@@ -26,7 +26,7 @@ export default function AwarenessPage() {
     return (
         <>
             <PortfolioNavbar />
-            <div className="pt-20"> {/* Add padding for fixed navbar */}
+            <div className="pt-24 bg-transparent min-h-screen"> 
                 <FAQSection title="Understanding BPD" faqs={bpdFAQs} />
             </div>
             <Footer />

@@ -30,10 +30,10 @@ export default function StatisticsPage() {
     return (
         <>
             <PortfolioNavbar />
-            <main className="pt-32 pb-24 bg-background min-h-screen">
+            <main className="pt-32 pb-24 bg-transparent min-h-screen">
                 <div className="mx-auto max-w-7xl px-8">
                     <div className="text-center mb-16">
-                        <h1 className="text-[40px] font-normal leading-tight text-foreground mb-4">
+                        <h1 className="text-[40px] font-bold leading-tight text-foreground mb-4 font-headings">
                             Key Statistics
                         </h1>
                         <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
@@ -48,9 +48,9 @@ export default function StatisticsPage() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1 }}
-                                className="p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all shadow-sm"
+                                className="p-8 rounded-2xl bg-white/40 backdrop-blur-xl border border-white/50 shadow-[0_8px_32px_0_rgba(20,51,28,0.06)] hover:shadow-[0_8px_32px_0_rgba(20,51,28,0.12)] transition-all duration-300 group"
                             >
-                                <div className="text-4xl font-medium text-secondary mb-2">
+                                <div className="text-4xl font-bold text-primary mb-2 font-headings group-hover:scale-105 transition-transform duration-300">
                                     {stat.value}
                                 </div>
                                 <div className="text-lg font-medium text-foreground mb-2">
