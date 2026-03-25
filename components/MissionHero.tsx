@@ -172,7 +172,7 @@ export const MissionHero = () => {
 
                     <div className="col-span-12">
                         <div className="overflow-visible pb-5">
-                            <div className="grid grid-cols-12 gap-5 relative z-10">
+                            <div className="grid grid-cols-12 gap-3 md:gap-5 relative z-10">
                                 {stats.map((stat, index) => (
                                     <div key={index} className="col-span-6 md:col-span-3">
                                         <motion.div
@@ -195,10 +195,10 @@ export const MissionHero = () => {
                                                 delay: stat.delay,
                                                 ease: [0.1, 0, 0.1, 1],
                                             }}
-                                            className="flex flex-col gap-2 p-6 rounded-2xl bg-white/50 backdrop-blur-md border border-white/60 shadow-[0_8px_32px_0_rgba(20,51,28,0.04)] hover:shadow-[0_8px_32px_0_rgba(20,51,28,0.08)] transition-all duration-300"
+                                            className="flex flex-col gap-1 md:gap-2 p-4 md:p-6 rounded-2xl bg-white/50 backdrop-blur-md border border-white/60 shadow-[0_8px_32px_0_rgba(20,51,28,0.04)] hover:shadow-[0_8px_32px_0_rgba(20,51,28,0.08)] transition-all duration-300"
                                         >
                                             <span
-                                                className="text-2xl font-medium leading-[26.4px] tracking-tight text-primary"
+                                                className="text-xl md:text-2xl font-medium leading-tight tracking-tight text-primary break-words"
                                             >
                                                 {stat.value}
                                             </span>
