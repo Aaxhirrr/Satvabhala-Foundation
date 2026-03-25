@@ -32,25 +32,25 @@ export default function SourcesPage() {
             <main className="pt-32 pb-24 bg-background min-h-screen">
                 <div className="mx-auto max-w-7xl px-8">
                     <div className="text-center mb-16">
-                        <h1 className="text-[40px] font-normal leading-tight text-[#111A4A] mb-4">
+                        <h1 className="text-[40px] font-normal leading-tight text-foreground mb-4">
                             Sources & Citations
                         </h1>
-                        <p className="text-lg text-[#111A4A] opacity-60 max-w-2xl mx-auto">
+                        <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
                             Trusted resources for the information provided on this website.
                         </p>
                     </div>
 
                     <div className="max-w-3xl mx-auto space-y-6">
                         {sources.map((source, index) => (
-                            <div key={index} className="p-6 rounded-xl bg-white border border-[#e5e5e5] hover:shadow-md transition-shadow">
+                            <div key={index} className="p-6 rounded-xl bg-card border border-border hover:shadow-md transition-shadow">
                                 <a href={source.url} target="_blank" rel="noopener noreferrer" className="grooup block">
-                                    <h3 className="text-xl font-medium text-[#156d95] group-hover:underline mb-2">
+                                    <h3 className="text-xl font-medium text-primary group-hover:underline mb-2">
                                         {source.name}
                                     </h3>
-                                    <p className="text-[#666666]">
+                                    <p className="text-muted-foreground">
                                         {source.description}
                                     </p>
-                                    <div className="mt-2 text-sm text-[#999999] truncate">
+                                    <div className="mt-2 text-sm text-muted-foreground/80 truncate">
                                         {source.url}
                                     </div>
                                 </a>

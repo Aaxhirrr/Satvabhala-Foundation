@@ -83,7 +83,7 @@ export const Footer = ({
   const currentYear = new Date().getFullYear()
   const copyright = copyrightText || `© ${currentYear} ${companyName}. All rights reserved.`
   return (
-    <footer className="w-full bg-[#fafafa] border-t border-[#e5e5e5]">
+    <footer className="w-full bg-muted border-t border-border">
       <div className="max-w-[1200px] mx-auto px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-12">
@@ -97,12 +97,12 @@ export const Footer = ({
           >
             <div className="mb-4">
               <h3
-                className="text-2xl font-semibold text-[#202020] mb-2"
+                className="text-2xl font-semibold text-foreground mb-2"
                 style={{ fontFamily: "Figtree", fontWeight: "500" }}
               >
                 {companyName}
               </h3>
-              <p className="text-sm leading-5 text-[#666666] max-w-xs" style={{ fontFamily: "Figtree" }}>
+              <p className="text-sm leading-5 text-muted-foreground max-w-xs" style={{ fontFamily: "Figtree" }}>
                 {tagline}
               </p>
             </div>
@@ -112,7 +112,7 @@ export const Footer = ({
               {socialLinks.twitter && (
                 <a
                   href={socialLinks.twitter}
-                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-[#e5e5e5] text-[#666666] hover:text-[#202020] hover:border-[#202020] transition-colors duration-150"
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-border text-muted-foreground hover:text-foreground hover:border-[#202020] transition-colors duration-150"
                   aria-label="Twitter"
                 >
                   <Twitter className="w-4 h-4" />
@@ -121,7 +121,7 @@ export const Footer = ({
               {socialLinks.linkedin && (
                 <a
                   href={socialLinks.linkedin}
-                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-[#e5e5e5] text-[#666666] hover:text-[#202020] hover:border-[#202020] transition-colors duration-150"
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-border text-muted-foreground hover:text-foreground hover:border-[#202020] transition-colors duration-150"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-4 h-4" />
@@ -130,7 +130,7 @@ export const Footer = ({
               {socialLinks.github && (
                 <a
                   href={socialLinks.github}
-                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-[#e5e5e5] text-[#666666] hover:text-[#202020] hover:border-[#202020] transition-colors duration-150"
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-border text-muted-foreground hover:text-foreground hover:border-[#202020] transition-colors duration-150"
                   aria-label="GitHub"
                 >
                   <Github className="w-4 h-4" />
@@ -139,7 +139,7 @@ export const Footer = ({
               {socialLinks.email && (
                 <a
                   href={`mailto:${socialLinks.email}`}
-                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-[#e5e5e5] text-[#666666] hover:text-[#202020] hover:border-[#202020] transition-colors duration-150"
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-border text-muted-foreground hover:text-foreground hover:border-[#202020] transition-colors duration-150"
                   aria-label="Email"
                 >
                   <Mail className="w-4 h-4" />
@@ -159,7 +159,7 @@ export const Footer = ({
               className="col-span-1"
             >
               <h4
-                className="text-sm font-medium text-[#202020] mb-4 uppercase tracking-wide"
+                className="text-sm font-medium text-foreground mb-4 uppercase tracking-wide"
                 style={{ fontFamily: "Figtree", fontWeight: "500" }}
               >
                 {section.title}
@@ -169,7 +169,7 @@ export const Footer = ({
                   <li key={linkIndex}>
                     <a
                       href={link.href}
-                      className="text-sm text-[#666666] hover:text-[#202020] transition-colors duration-150"
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
                       style={{ fontFamily: "Figtree" }}
                     >
                       {link.label}
@@ -187,23 +187,23 @@ export const Footer = ({
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="pt-8 border-t border-[#e5e5e5]"
+          className="pt-8 border-t border-border"
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-[#666666]" style={{ fontFamily: "Figtree" }}>
+            <p className="text-sm text-muted-foreground" style={{ fontFamily: "Figtree" }}>
               {copyright}
             </p>
             <div className="flex items-center gap-6">
               <a
                 href="#status"
-                className="text-sm text-[#666666] hover:text-[#202020] transition-colors duration-150"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
                 style={{ fontFamily: "Figtree" }}
               >
                 Status
               </a>
               <a
                 href="#sitemap"
-                className="text-sm text-[#666666] hover:text-[#202020] transition-colors duration-150"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
                 style={{ fontFamily: "Figtree" }}
               >
                 Sitemap

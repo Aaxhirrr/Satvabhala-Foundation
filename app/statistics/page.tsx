@@ -33,10 +33,10 @@ export default function StatisticsPage() {
             <main className="pt-32 pb-24 bg-background min-h-screen">
                 <div className="mx-auto max-w-7xl px-8">
                     <div className="text-center mb-16">
-                        <h1 className="text-[40px] font-normal leading-tight text-[#111A4A] mb-4">
+                        <h1 className="text-[40px] font-normal leading-tight text-foreground mb-4">
                             Key Statistics
                         </h1>
-                        <p className="text-lg text-[#111A4A] opacity-60 max-w-2xl mx-auto">
+                        <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
                             Understanding the prevalence and impact of Borderline Personality Disorder through data.
                         </p>
                     </div>
@@ -48,15 +48,15 @@ export default function StatisticsPage() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1 }}
-                                className="p-8 rounded-2xl bg-white border border-[#e5e5e5] hover:border-[#156d95]/50 transition-all shadow-sm"
+                                className="p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all shadow-sm"
                             >
-                                <div className="text-4xl font-medium text-[#167E6C] mb-2" style={{ color: "#146e96" }}>
+                                <div className="text-4xl font-medium text-secondary mb-2">
                                     {stat.value}
                                 </div>
-                                <div className="text-lg font-medium text-[#111A4A] mb-2">
+                                <div className="text-lg font-medium text-foreground mb-2">
                                     {stat.label}
                                 </div>
-                                <p className="text-sm text-[#7C7F88] leading-relaxed">
+                                <p className="text-sm text-muted-foreground leading-relaxed">
                                     {stat.description}
                                 </p>
                             </motion.div>

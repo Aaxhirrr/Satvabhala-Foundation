@@ -52,9 +52,22 @@ export const PortfolioNavbar = () => {
 
   // @return
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"}`}
-    >
+    <>
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-40 bg-[#E8EFE3]/5 backdrop-blur-[2px] md:hidden"
+            onClick={closeMobileMenu}
+          />
+        )}
+      </AnimatePresence>
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMobileMenuOpen ? "bg-white/30 backdrop-blur-md border-b border-white/40 shadow-sm" : "bg-transparent"}`}
+      >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
@@ -86,7 +99,7 @@ export const PortfolioNavbar = () => {
           <div className="hidden md:block">
             <button
               onClick={() => handleLinkClick("/contact")}
-              className="bg-[#156d95] text-white px-[18px] rounded-full text-base font-semibold hover:bg-[#156d95]/90 transition-all duration-200 hover:rounded-2xl shadow-sm hover:shadow-md whitespace-nowrap leading-4 py-[15px]"
+              className="bg-primary text-primary-foreground px-[18px] rounded-full text-base font-semibold hover:bg-primary/90 transition-all duration-200 hover:rounded-2xl shadow-sm hover:shadow-md whitespace-nowrap leading-4 py-[15px]"
             >
               <span
                 style={{
@@ -129,7 +142,7 @@ export const PortfolioNavbar = () => {
               duration: 0.3,
               ease: "easeInOut",
             }}
-            className="md:hidden bg-background/95 backdrop-blur-md border-t border-border"
+            className="md:hidden border-t border-white/20"
           >
             <div className="px-6 py-6 space-y-4">
               {navigationLinks.map((link) => (
@@ -144,7 +157,7 @@ export const PortfolioNavbar = () => {
               <div className="pt-4 border-t border-border">
                 <button
                   onClick={() => handleLinkClick("#contact")}
-                  className="w-full bg-[#156d95] text-white px-[18px] py-[15px] rounded-full text-base font-semibold hover:bg-[#156d95]/90 transition-all duration-200"
+                  className="w-full bg-primary text-primary-foreground px-[18px] py-[15px] rounded-full text-base font-semibold hover:bg-primary/90 transition-all duration-200"
                 >
                   <span>Contact / Get Help</span>
                 </button>
@@ -154,5 +167,6 @@ export const PortfolioNavbar = () => {
         )}
       </AnimatePresence>
     </nav>
+    </>
   )
 }

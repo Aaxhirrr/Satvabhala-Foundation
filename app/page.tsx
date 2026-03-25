@@ -1,5 +1,6 @@
 import { PortfolioNavbar } from "@/components/PortfolioNavbar"
 import { MissionHero } from "@/components/MissionHero"
+import { HealingStories } from "@/components/HealingStories"
 import { Footer } from "@/components/Footer"
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <PortfolioNavbar />
       <MissionHero />
+      <HealingStories />
       <Footer />
     </>
   )
