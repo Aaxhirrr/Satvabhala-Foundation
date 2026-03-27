@@ -61,7 +61,7 @@ export const Footer = ({
     instagram:
       "https://www.instagram.com/sidsfoundation?igsh=eWk3Y3hoaG92cmVt&utm_source=qr",
     github: "https://github.com/Aaxhirrr/Satvabhala-Foundation",
-    email: "contact@satvabhala.org",
+    email: "satvabhalafoundation@gmail.com",
   },
   copyrightText,
 }: FooterProps) => {
