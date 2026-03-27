@@ -38,7 +38,7 @@ const defaultSections: FooterSection[] = [
     title: "Resources",
     links: [
       { label: "BPD Statistics", href: "/statistics" },
-      { label: "DBT Skills", href: "/sources" },
+      { label: "Beyond the Diagnosis", href: "/beyond-the-diagnosis" },
       { label: "Crisis Help", href: "/contact" },
       { label: "Research Sources", href: "/sources" },
     ],

@@ -18,6 +18,10 @@ const navigationLinks = [
     href: "/statistics",
   },
   {
+    name: "Beyond the Diagnosis",
+    href: "/beyond-the-diagnosis",
+  },
+  {
     name: "Sources",
     href: "/sources",
   },
@@ -80,12 +84,12 @@ export const PortfolioNavbar = () => {
             </div>
 
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
+              <div className="ml-8 flex items-baseline space-x-6 lg:space-x-8">
                 {navigationLinks.map((link) => (
                   <button
                     key={link.name}
                     onClick={() => handleLinkClick(link.href)}
-                    className="text-foreground hover:text-primary px-3 py-2 text-base font-medium transition-colors duration-200 relative group"
+                    className="text-foreground hover:text-primary px-2 py-2 text-sm lg:text-base font-medium transition-colors duration-200 relative group"
                   >
                     <span>{link.name}</span>
                     <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
