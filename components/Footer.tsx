@@ -1,29 +1,29 @@
-"use client"
-import { Github, Twitter, Linkedin, Mail } from "lucide-react"
-import { motion } from "framer-motion"
+"use client";
+import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 type FooterLink = {
-  label: string
-  href: string
-}
+  label: string;
+  href: string;
+};
 
 type FooterSection = {
-  title: string
-  links: FooterLink[]
-}
+  title: string;
+  links: FooterLink[];
+};
 
 type FooterProps = {
-  companyName?: string
-  tagline?: string
-  sections?: FooterSection[]
+  companyName?: string;
+  tagline?: string;
+  sections?: FooterSection[];
   socialLinks?: {
-    twitter?: string
-    linkedin?: string
-    github?: string
-    email?: string
-  }
-  copyrightText?: string
-}
+    twitter?: string;
+    linkedin?: string;
+    github?: string;
+    email?: string;
+  };
+  copyrightText?: string;
+};
 
 const defaultSections: FooterSection[] = [
   {
@@ -45,35 +45,33 @@ const defaultSections: FooterSection[] = [
     ],
   },
   {
-    title: "Legal",
+    title: "Support",
     links: [
-      { label: "Privacy Policy", href: "/privacy" },
-      { label: "Terms of Service", href: "/terms" },
-      { label: "Code of Conduct", href: "/conduct" },
+      { label: "Get Help", href: "/contact" },
+      { label: "Contact Us", href: "/contact" },
+      { label: "About Satvabhala", href: "/about" },
     ],
   },
-]
+];
 
 export const Footer = ({
   companyName = "Satvabhala",
   tagline = "Hope, Healing, and Awareness for BPD",
   sections = defaultSections,
   socialLinks = {
-    twitter: "https://twitter.com",
-    linkedin: "https://linkedin.com",
-    github: "https://github.com",
     email: "contact@satvabhala.org",
   },
   copyrightText,
 }: FooterProps) => {
-  const currentYear = new Date().getFullYear()
-  const copyright = copyrightText || `© ${currentYear} ${companyName}. All rights reserved.`
+  const currentYear = new Date().getFullYear();
+  const copyright =
+    copyrightText ||
+    `Copyright ${currentYear} ${companyName}. All rights reserved.`;
+
   return (
     <footer className="w-full bg-muted border-t border-border">
       <div className="max-w-[1200px] mx-auto px-8 py-16">
-        {/* Main Footer Content */}
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-12">
-          {/* Brand Column */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -82,9 +80,7 @@ export const Footer = ({
             className="col-span-2"
           >
             <div className="mb-4">
-              <h3
-                className="text-2xl font-bold text-foreground mb-2 font-headings"
-              >
+              <h3 className="text-2xl font-bold text-foreground mb-2 font-headings">
                 {companyName}
               </h3>
               <p className="text-sm leading-5 text-muted-foreground max-w-xs font-sans">
@@ -92,7 +88,6 @@ export const Footer = ({
               </p>
             </div>
 
-            {/* Social Links */}
             <div className="flex items-center gap-3 mt-6">
               {socialLinks.twitter && (
                 <a
@@ -133,19 +128,20 @@ export const Footer = ({
             </div>
           </motion.div>
 
-          {/* Link Sections */}
           {sections.map((section, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+                ease: "easeOut",
+              }}
               className="col-span-1"
             >
-              <h4
-                className="text-sm font-bold text-foreground mb-4 uppercase tracking-wide font-sans"
-              >
+              <h4 className="text-sm font-bold text-foreground mb-4 uppercase tracking-wide font-sans">
                 {section.title}
               </h4>
               <ul className="space-y-3">
@@ -164,7 +160,6 @@ export const Footer = ({
           ))}
         </div>
 
-        {/* Bottom Bar */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -178,21 +173,21 @@ export const Footer = ({
             </p>
             <div className="flex items-center gap-6">
               <a
-                href="#status"
+                href="/about"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150 font-sans"
               >
-                Status
+                About
               </a>
               <a
-                href="#sitemap"
+                href="/contact"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150 font-sans"
               >
-                Sitemap
+                Get Help
               </a>
             </div>
           </div>
         </motion.div>
       </div>
     </footer>
-  )
-}
+  );
+};
