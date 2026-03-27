@@ -1,44 +1,117 @@
-# Satvabhala — BPD Awareness & Support Website (In Progress)
+# Satvabhala Foundation Website
 
-## Why this matters
+This repository contains the website I am building for my friend, who founded **Satvabhala Foundation**, a nonprofit centered on Borderline Personality Disorder (BPD) awareness, education, and support.
 
-Borderline Personality Disorder (BPD) is a mental health condition that can involve intense emotions, relationship struggles, and a lot of inner pain. It’s also one of the most misunderstood diagnoses, which leads to stigma and people not getting the support they deserve.
+The purpose of this site is to make BPD information clearer, kinder, and more credible for the people who need it most: individuals living with BPD, loved ones trying to understand it, and visitors looking for trustworthy, stigma-free mental health education.
 
-**The important part:** people can get better, especially with consistent, evidence-based therapy and a supportive environment.
+## Why She Started This
 
-## What I’m doing
+Satvabhala was started from a deeply personal place.
 
-I’m working with a friend who runs **Satvabhala**, a nonprofit focused on BPD awareness. My role is to help create a professional, clear, and respectful website that:
+My friend founded this nonprofit after losing her best friend, **Sidhant**, in November 2022. He was first misdiagnosed with bipolar disorder, then with BPD, and he was never able to get the right treatment in time. That loss shaped the mission behind this project: to push back against stigma, misunderstanding, and misdiagnosis, and to create something that helps people feel seen, informed, and supported earlier.
 
-*   Explains BPD in simple, non-judgmental language
-*   Shares real, trusted information and statistics
-*   Includes citations so everything is credible
-*   Makes it easy for someone to find help and resources quickly
-*   Keeps safety and crisis support visible on the site
+This website is meant to reflect that mission with compassion, clarity, and evidence-based information.
 
-## Key message the site will include
+## My Role
 
-There isn’t a single “perfect” or fixed medication plan for BPD. Treatment is usually therapy-first (especially skills-based approaches like DBT), and medication may be used only for specific symptoms or co-occurring conditions when appropriate.
+I am building the website for her and shaping the product/technical side of the project so it can present the nonprofit professionally online.
 
-## What the website will likely have
+That includes:
 
-*   Home / Mission
-*   About Satvabhala
-*   BPD Awareness (education page)
-*   Statistics
-*   Sources / Citations
-*   Get Help / Crisis Resources (easy to find)
+- Designing and implementing the site UI
+- Organizing the educational content into accessible pages
+- Keeping the tone respectful and non-judgmental
+- Making sure the site includes credible sourcing
+- Keeping help and crisis resources easy to find
 
-## Safety note
+## Important Note
 
-This project is for education and support. The website will not replace professional medical care.
+> [!CAUTION]
+> **I DO NOT GAIN ANY MONETIZATION FROM THIS PROJECT.**
+>
+> I am currently on an **F-1 visa**, so I do **not** receive money, revenue, or monetization from this website.
+>
+> There is **no monetization model yet**.
+>
+> If there is ever any monetization in the future, **everything will go to her / the nonprofit**, not to me.
 
-**If someone is in immediate danger:**
+## Current Website Structure
 
-*   Call **911** (U.S.)
-*   Call/Text **988** (U.S. Suicide & Crisis Lifeline)
+The site currently includes:
 
-## Sources we’ll rely on (for credibility)
+- `Home` - mission-driven landing page
+- `Awareness` - BPD education, myths, symptoms, and treatment framing
+- `Statistics` - prevalence and misdiagnosis context
+- `Beyond the Diagnosis` - a focused BPD vs bipolar comparison page
+- `Sources` - citations and research references
+- `About` - the nonprofit mission and personal story behind the work
+- `Contact / Get Help` - crisis support and nonprofit contact information
 
-*   National Institute of Mental Health (NIMH)
-*   Clinical guidelines and reputable medical organizations (e.g., NICE, major academic/medical sources)
+## Content Direction
+
+The site is built around a few core ideas:
+
+- BPD is real, serious, and often deeply misunderstood
+- People with BPD deserve compassion, not stigma
+- Misdiagnosis, especially confusion with bipolar disorder, can delay proper care
+- Therapy is central to treatment, and medication is not the main treatment for core BPD symptoms
+- Crisis support and help-seeking information should be visible and easy to access
+
+## Sources Used Across the Site
+
+The project content is grounded in the sources currently referenced on the site, including:
+
+- National Institute of Mental Health (NIMH)
+- NewYork-Presbyterian Health Matters
+- Revive Research Institute
+- Peer-reviewed PMC clinical review material
+- NAMI
+- Borderline in the ACT
+
+These sources support topics such as:
+
+- prevalence
+- misdiagnosis
+- BPD vs bipolar differences
+- splitting / black-and-white thinking
+- therapy approaches like DBT
+- medication limitations for BPD
+
+## Safety Note
+
+This website is for education, awareness, and support. It is **not** a replacement for professional medical care, diagnosis, therapy, or crisis intervention.
+
+If someone is in immediate danger in the U.S.:
+
+- Call `911`
+- Call or text `988`
+- Text `HOME` to `741741`
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+## Local Development
+
+From the project root:
+
+```bash
+npm install
+npm run dev
+```
+
+Production build:
+
+```bash
+npm run build
+```
+
+Type check:
+
+```bash
+npx tsc --noEmit
+```
