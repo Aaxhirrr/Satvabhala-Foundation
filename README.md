@@ -14,7 +14,9 @@ This website is meant to reflect that mission with compassion, clarity, and evid
 
 ## My Role
 
-I am building the website for her and shaping the product/technical side of the project so it can present the nonprofit professionally online.
+I am building the website for my friend and shaping the product/technical side of the project so it can present the nonprofit professionally online.
+
+This is also my direct contribution to the cause: using my skills to help her mission reach more people with clarity, care, and credible information.
 
 That includes:
 
