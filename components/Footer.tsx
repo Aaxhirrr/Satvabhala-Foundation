@@ -1,5 +1,5 @@
 "use client";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 type FooterLink = {
@@ -17,8 +17,7 @@ type FooterProps = {
   tagline?: string;
   sections?: FooterSection[];
   socialLinks?: {
-    twitter?: string;
-    linkedin?: string;
+    instagram?: string;
     github?: string;
     email?: string;
   };
@@ -59,6 +58,9 @@ export const Footer = ({
   tagline = "Hope, Healing, and Awareness for BPD",
   sections = defaultSections,
   socialLinks = {
+    instagram:
+      "https://www.instagram.com/sidsfoundation?igsh=eWk3Y3hoaG92cmVt&utm_source=qr",
+    github: "https://github.com/Aaxhirrr/Satvabhala-Foundation",
     email: "contact@satvabhala.org",
   },
   copyrightText,
@@ -89,22 +91,15 @@ export const Footer = ({
             </div>
 
             <div className="flex items-center gap-3 mt-6">
-              {socialLinks.twitter && (
+              {socialLinks.instagram && (
                 <a
-                  href={socialLinks.twitter}
+                  href={socialLinks.instagram}
                   className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-border text-muted-foreground hover:text-foreground hover:border-[#202020] transition-colors duration-150"
-                  aria-label="Twitter"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Twitter className="w-4 h-4" />
-                </a>
-              )}
-              {socialLinks.linkedin && (
-                <a
-                  href={socialLinks.linkedin}
-                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-border text-muted-foreground hover:text-foreground hover:border-[#202020] transition-colors duration-150"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-4 h-4" />
+                  <Instagram className="w-4 h-4" />
                 </a>
               )}
               {socialLinks.github && (
@@ -112,6 +107,8 @@ export const Footer = ({
                   href={socialLinks.github}
                   className="w-9 h-9 flex items-center justify-center rounded-full bg-white border border-border text-muted-foreground hover:text-foreground hover:border-[#202020] transition-colors duration-150"
                   aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Github className="w-4 h-4" />
                 </a>
