@@ -8,7 +8,7 @@ The purpose of this site is to make BPD information clearer, kinder, and more cr
 
 Satvabhala was started from a deeply personal place.
 
-My friend founded this nonprofit after losing her best friend, **Sidhant**, in November 2022. He was first misdiagnosed with bipolar disorder, then with BPD, and he was never able to get the right treatment in time. That loss shaped the mission behind this project: to push back against stigma, misunderstanding, and misdiagnosis, and to create something that helps people feel seen, informed, and supported earlier.
+My friend founded this nonprofit after losing her best friend, **Sidhant**, in November 2022. His loss made clear how deeply BPD can be misunderstood, stigmatized, and left unspoken, and it shaped the mission behind this project: to create something that helps people feel seen, informed, and supported earlier.
 
 This website is meant to reflect that mission with compassion, clarity, and evidence-based information.
 
