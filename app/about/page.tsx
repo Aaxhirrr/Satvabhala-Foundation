@@ -30,14 +30,38 @@ export default function AboutPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary/80 font-sans">
                 Why This Work Is Personal
               </p>
-              <p className="mt-3 text-base leading-7 text-foreground/85 font-sans">
-                My best friend Sidhant, a freshman at ASU when he passed, joined
-                the roughly 10% of people with BPD who die by suicide in
-                November 2022. He was first misdiagnosed with bipolar disorder,
-                then with BPD, and he was never able to get the proper treatment
-                in time. His story is part of why this work matters so deeply to
-                us.
-              </p>
+              <div className="mt-3 space-y-4 text-base leading-7 text-foreground/85 font-sans">
+                <p>
+                  My best friend Sidhant was a freshman at ASU when he died by
+                  suicide in November 2022 after struggling with borderline
+                  personality disorder.
+                </p>
+                <p>
+                  BPD is one of the most misunderstood and stigmatized mental
+                  health conditions. While it is often confused with other
+                  disorders, the deeper issue is how frequently it is dismissed,
+                  minimized, or left unspoken. The stigma surrounding it can
+                  make people feel ashamed to open up, even when they need
+                  support the most.
+                </p>
+                <p>
+                  Sidhant felt that weight. There were things he struggled to
+                  say out loud.
+                </p>
+                <p>
+                  He deserved more understanding, more compassion, and more
+                  space to be heard.
+                </p>
+                <p>
+                  This foundation was created so that others do not have to feel
+                  that same silence. To create a space where people can talk
+                  about BPD openly, access support without judgment, and feel
+                  seen in what they are going through.
+                </p>
+                <p className="font-medium text-foreground/95">
+                  His story is why this work matters.
+                </p>
+              </div>
             </div>
 
             <h2 className="text-2xl font-bold text-primary mt-8 mb-4 font-headings">
