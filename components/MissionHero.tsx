@@ -22,7 +22,7 @@ type DataPoint = {
 const stats: StatItem[] = [
   {
     value: "1.6%",
-    description: "Popultion estimated\nto have BPD",
+    description: "Population estimated\nto have BPD",
     delay: 0,
   },
   {

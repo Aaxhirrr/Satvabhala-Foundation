@@ -9,7 +9,7 @@ const stats = [
     value: "1.4%",
     label: "Past-Year U.S. Adult Prevalence",
     description:
-      "NIMH's National Comorbidity Study Replication estimate for borderline personality disorder.",
+      "NIMH's National Comorbidity Survey Replication estimate for borderline personality disorder.",
     source: "Source 1",
   },
   {
